@@ -1,4 +1,4 @@
-#  Assetutil-convert
+#  assetutil-convert
 
 Assetutil-convert is a utility to read the output of the `assetutil --info` command and convert it to CSV.
 This CSV summary lets you understand what's inside your `Assets.car` file.
