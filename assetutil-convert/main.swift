@@ -7,5 +7,17 @@
 
 import Foundation
 
-print("Hello, World!")
+let stdin = FileHandle.standardInput
+if let inputData = try! stdin.readToEnd() {
+    
+    let decoder = JSONDecoder()
+    let safeAssets = try? decoder.decode([Result<AssetInfo, DecodingError>].self, from: inputData)
+    if let assets = safeAssets?.compactMap({ try? $0.get() }) {
+        print(AssetInfo.quickCSVHeader())
+        for asset in assets {
+            print(asset.quickCSV())
+        }
+    }
+    
+}
 

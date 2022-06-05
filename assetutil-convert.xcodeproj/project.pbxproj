@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		2B11D0BE284D2C24000A1E48 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B11D0BD284D2C24000A1E48 /* main.swift */; };
+		2B11D0C5284D34BF000A1E48 /* AssetInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B11D0C4284D34BF000A1E48 /* AssetInfo.swift */; };
+		2B11D0C7284D3700000A1E48 /* AssetInfoHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B11D0C6284D3700000A1E48 /* AssetInfoHeader.swift */; };
+		2B11D0C9284D4185000A1E48 /* Decodable+Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B11D0C8284D4185000A1E48 /* Decodable+Result.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +28,10 @@
 /* Begin PBXFileReference section */
 		2B11D0BA284D2C24000A1E48 /* assetutil-convert */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "assetutil-convert"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B11D0BD284D2C24000A1E48 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		2B11D0C4284D34BF000A1E48 /* AssetInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetInfo.swift; sourceTree = "<group>"; };
+		2B11D0C6284D3700000A1E48 /* AssetInfoHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetInfoHeader.swift; sourceTree = "<group>"; };
+		2B11D0C8284D4185000A1E48 /* Decodable+Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Decodable+Result.swift"; sourceTree = "<group>"; };
+		2B11D0CA284D4CF0000A1E48 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +48,7 @@
 		2B11D0B1284D2C24000A1E48 = {
 			isa = PBXGroup;
 			children = (
+				2B11D0CA284D4CF0000A1E48 /* README.md */,
 				2B11D0BC284D2C24000A1E48 /* assetutil-convert */,
 				2B11D0BB284D2C24000A1E48 /* Products */,
 			);
@@ -58,6 +66,9 @@
 			isa = PBXGroup;
 			children = (
 				2B11D0BD284D2C24000A1E48 /* main.swift */,
+				2B11D0C4284D34BF000A1E48 /* AssetInfo.swift */,
+				2B11D0C8284D4185000A1E48 /* Decodable+Result.swift */,
+				2B11D0C6284D3700000A1E48 /* AssetInfoHeader.swift */,
 			);
 			path = "assetutil-convert";
 			sourceTree = "<group>";
@@ -120,6 +131,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B11D0C5284D34BF000A1E48 /* AssetInfo.swift in Sources */,
+				2B11D0C7284D3700000A1E48 /* AssetInfoHeader.swift in Sources */,
+				2B11D0C9284D4185000A1E48 /* Decodable+Result.swift in Sources */,
 				2B11D0BE284D2C24000A1E48 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
