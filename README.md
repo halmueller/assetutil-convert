@@ -1,7 +1,7 @@
 #  Assetutil-convert
 
-Assetutil-convert is a utility to read the output of the `assetutil` command and convert it to CSV.
-This summary lets you understand what's inside your `Assets.car` file.
+Assetutil-convert is a utility to read the output of the `assetutil --info` command and convert it to CSV.
+This CSV summary lets you understand what's inside your `Assets.car` file.
 
 To extract `Assets.car`, you can use the "Apple Configurator" utility. This
 [article by Alexey Alter-Pesotskiy](https://testableapple.com/note-8/) explains how to grab an app's IPA.
@@ -17,7 +17,7 @@ represent what's being downloaded for a particular user, after thinning.
 Build this project. Then under Xcode's "Product" menu, choose "Show Build Folder in Finder". 
 From the Terminal, you want to do something like this:
 
-`cat Assets.car | assetutil-convert > assets.csv`
+`assetutil --info Assets.car | assetutil-convert > assets.csv`
 
 You can drag from the Finder onto Terminal to get the long Derived Data path into the window, or 
 you can just move the `assetutil-convert` binary somewhere convenient.
