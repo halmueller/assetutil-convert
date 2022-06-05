@@ -37,6 +37,8 @@ import Foundation
 
  */
 
+/// The JSON emitted by assetutil is a mixed array. It starts with a header block, which I decided
+/// to ignore, but here's the struct I started on.
 struct AssetInfoHeader: Codable {
     let assetStorageVersion : String
     let platformVersion : String
